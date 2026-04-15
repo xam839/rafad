@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="المنصة الرقمية لإدارة الإيفاد والابتعاث - تجمع جدة الصحي الثاني">
+    <title>المنصة الرقمية لإدارة الإيفاد والابتعاث | تجمع جدة الصحي الثاني</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Google Fonts for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <div class="splash-logo-container">
+            <div class="splash-loader"></div>
+            <img src="assets/images/وردة-التميز.png" alt="شعار التميز" class="splash-logo">
+        </div>
+        <h2 class="splash-text text-gradient">المنصة الرقمية لإدارة الإيفاد والابتعاث</h2>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container flex-between align-center">
+            <div class="logo-container">
+                <img src="assets/images/وردة-التميز.png" alt="شعار تجمع جدة الصحي الثاني" class="brand-logo">
+                <div class="logo-text">
+                    <span class="logo-title">التجمع الصحي للإدارة الصحية </span>
+                    <span class="logo-subtitle">إدارة الإيفاد والابتعاث</span>
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a href="#hero" class="nav-link active">الرئيسية</a>
+                <a href="#description" class="nav-link">وصف المشروع</a>
+                <a href="#goals" class="nav-link">الأهداف</a>
+                <a href="#stages" class="nav-link">المراحل</a>
+                <a href="#roles" class="nav-link">الصلاحيات</a>
+                <a href="#outputs" class="nav-link">المخرجات</a>
+            </nav>
+            <div class="nav-cta">
+                <button class="btn btn-outline"><i class="fa-regular fa-user"></i> تسجيل الدخول</button>
+            </div>
+            <div class="hamburger" id="hamburgerMenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container flex-row">
+            <div class="hero-content">
+                <div class="badge">منصة رقمية متكاملة</div>
+                <h1 class="hero-title">المنصة الرقمية لإدارة <span class="text-gradient">الإيفاد والابتعاث</span></h1>
+                <p class="hero-subtitle">أتمتة كاملة، بيئة بلا ورق، وقرارات مدعومة بالبيانات لتمكين الكوادر الصحية بتجمع جدة الصحي الثاني.</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" onclick="document.getElementById('description').scrollIntoView({behavior:'smooth'})">اكتشف المشروع <i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+                
+                <div class="hero-mini-stats">
+                    <div class="mini-stat"><i class="fa-solid fa-bolt"></i><span>تسريع الإجراءات</span></div>
+                    <div class="mini-stat"><i class="fa-solid fa-leaf"></i><span>توفير 100% للورق</span></div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="assets/images/hero2.png" alt="المنصة الرقمية لإدارة الإيفاد والابتعاث" class="hero-image" onerror="this.src='https://placehold.co/600x500/0b3d91/ffffff?text=المنصة+الرقمية';">
+                <!-- <div class="floating-card card-1"><i class="fa-solid fa-check-circle text-green"></i> دقة البيانات اللحظية</div>
+                <div class="floating-card card-2"><i class="fa-solid fa-chart-pie text-blue"></i> الحوكمة والأتمتة</div> -->
+            </div>
+        </div>
+        <div class="hero-bg-shapes"></div>
+    </section>
+
+    <!-- Project Description -->
+    <section id="description" class="section-padding bg-gray">
+        <div class="container">
+            <div class="flex-row align-center">
+                <div class="flex-1">
+                    <img src="assets/images/hero4.png" alt="إدارة المستشفيات" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+                </div>
+                <div class="flex-1">
+                    <div class="badge">نظرة عامة</div>
+                    <h2 class="section-title text-right">وصف المشروع</h2>
+                    <p class="section-desc text-right" style="margin-bottom: 1.5rem;">
+                        بناء نظام إلكتروني متطور لمتابعة طلبات الإيفاد والابتعاث، يتجاوز النظام مجرد أرشفة المستندات ليشمل أتمتة كاملة لإجراءات الإدارة والمتابعة (الإدارية والمالية).
+                    </p>
+                    <p class="section-desc text-right">
+                        يهدف النظام لربط متكامل لإدارة كافة طلبات الإيفاد والابتعاث لضمان سير أتمتة رحلة الموفد أو المبتعث منذ رفع الطلب وحتى إخلاء طرفه، دون الحاجة لتدخل إداري ورقي في العمليات الروتينية. وذلك من خلال لوحة تحكم ذكية تعرض تقدم الموفد/المبتعث، الوقت المستغرق، ونتائج التقييم، مع تزويد الإدارة بتقارير تحليلية لحظية. يمنح النظام صلاحية وصول كاملة لفرق إدارة الإيفاد والابتعاث والإدارات المساهمة في المستشفيات التابعة لتجمع جدة الصحي الثاني.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="features section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أهداف المشروع</h2>
+                <p class="section-desc">الغايات الأساسية والتشغيلية وراء إطالق المنصة الرقمية</p>
+            </div>
+            
+            <div class="grid-4">
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-light"><i class="fa-solid fa-robot"></i></div>
+                    <h3 class="feature-title">أتمتة العمليات</h3>
+                    <p class="feature-desc">بناء بيئة رقمية آمنة وموثوقة لإدارة بيانات الموفدين والمبتعثين، مما يضمن استمرارية الأعمال وحفظ الأصول.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-light"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3 class="feature-title">رفع الكفاءة التشغيلية</h3>
+                    <p class="feature-desc">الاستخدام الأمثل للموارد وتقليل الإجراءات اليدوية والهدر في الجهد والوقت.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-light"><i class="fa-solid fa-leaf"></i></div>
+                    <h3 class="feature-title">بيئة بلا ورق</h3>
+                    <p class="feature-desc">التحول الرقمي الكامل واعتماد مسارات العمل الإلكترونية والاستغناء عن التعاملات الورقية.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-light"><i class="fa-solid fa-bolt-lightning"></i></div>
+                    <h3 class="feature-title">تسريع الاستجابة</h3>
+                    <p class="feature-desc">تفعيل نظام الإشعارات الفورية والردود الآلية لتسريع إصدار قرارات الإيفاد والابتعاث.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-light"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="feature-title">الرقابة اللحظية</h3>
+                    <p class="feature-desc">توفير لوحات تحكم تفاعلية للمسؤولين لمتابعة الرحلة الأكاديمية والمهنية لحظياً.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-light"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="feature-title">دقة ونزاهة البيانات</h3>
+                    <p class="feature-desc">الحد من الأخطاء البشرية الناتجة عن الإدخال اليدوي وضمان تدفق دقيق للمعلومات.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-green-light"><i class="fa-solid fa-face-smile"></i></div>
+                    <h3 class="feature-title">تحسين تجربة المستفيد</h3>
+                    <p class="feature-desc">خلق رحلة رقمية سلسة تبدأ من التقديم السريع وتنتهي بالإجراءات النهائية بيسر.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon bg-blue-light"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3 class="feature-title">الحوكمة والربط المؤسسي</h3>
+                    <p class="feature-desc">الربط التقني بين إدارات الابتعاث، الموارد البشرية، والإدارة المالية لضمان التوافق مع الأنظمة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stages Section -->
+    <section id="stages" class="section-padding bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مراحل المنصة الإلكترونية</h2>
+                <p class="section-desc">التدرج المخطط لتنفيذ المنصة وربطها التشغيلي</p>
+            </div>
+            
+            <div class="grid-5" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div class="stage-card">
+                    <div class="stage-number">1</div>
+                    <div class="stage-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3 class="stage-title">إنشاء قاعدة البيانات</h3>
+                    <p class="stage-desc">لجميع الموفدين والمبتعثين (Delegates & Scholars Database)</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">2</div>
+                    <div class="stage-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="stage-title">التكامل الفني</h3>
+                    <p class="stage-desc">الربط مع الأنظمة الوطنية (System Integration)</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">3</div>
+                    <div class="stage-icon"><i class="fa-solid fa-user-shield"></i></div>
+                    <h3 class="stage-title">مصفوفة الصلاحيات</h3>
+                    <p class="stage-desc">توزيع الأدوار وسير العمل (User Roles & Permissions)</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">4</div>
+                    <div class="stage-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                    <h3 class="stage-title">أدوات التحليل</h3>
+                    <p class="stage-desc">والتقارير والبيانات اللحظية (Analytics Dashboard)</p>
+                </div>
+                <div class="stage-card">
+                    <div class="stage-number">5</div>
+                    <div class="stage-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+                    <h3 class="stage-title">الاختبار والتجريب</h3>
+                    <p class="stage-desc">التحقق والإطالق (Testing & Experimentation)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Details -->
+    <section id="implementation" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خطة التنفيذ: دورة حياة الطلب</h2>
+            </div>
+            <div class="implementation-list">
+                <div class="impl-item">
+                    <div class="impl-icon"><i class="fa-solid fa-id-card"></i></div>
+                    <div class="impl-content">
+                        <h4>1. بيانات الموظف الأساسية (Personal Data)</h4>
+                        <p>تُسحب آلياً عبر الربط مع نظام الموارد البشرية (موارد) وتشمل:</p>
+                        <ul>
+                            <li>الاسم الرباعي، الرقم الوظيفي، السجل المدني، وتاريخ الميلاد.</li>
+                            <li>المسمى الوظيفي (طبيب، أخصائي، فني، إداري).</li>
+                            <li>التخصص (حسب تصنيف هيئة التخصصات).</li>
+                            <li>تاريخ التعيين، مدة الخدمة، وآخر درجة تقويم أداء.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="impl-item">
+                    <div class="impl-icon"><i class="fa-solid fa-file-signature"></i></div>
+                    <div class="impl-content">
+                        <h4>2. بيانات طلب الإيفاد/الابتعاث (Application Details)</h4>
+                        <p>يتم إدخالها من قبل الموظف وتشمل:</p>
+                        <ul>
+                            <li>نوع الطلب (ابتعاث/إيفاد/تمديد).</li>
+                            <li>الدرجة العلمية والتخصص من قائمة الاحتياج.</li>
+                            <li>جهة ومقر الدراسة وتاريخ البرنامج.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="impl-item">
+                    <div class="impl-icon"><i class="fa-solid fa-paperclip"></i></div>
+                    <div class="impl-content">
+                        <h4>3. المرفقات والمسوغات (Digital Attachments)</h4>
+                        <p>تُرفع كملفات رقمية:</p>
+                        <ul>
+                            <li>خطاب القبول النهائي وشهادة التصنيف.</li>
+                            <li>خطة الدراسة وتوصيات علمية.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="impl-item">
+                    <div class="impl-icon"><i class="fa-solid fa-route"></i></div>
+                    <div class="impl-content">
+                        <h4>4. مسار الموافقات (Approval Tracking)</h4>
+                        <p>يُحدث آلياً بواسطة النظام:</p>
+                        <ul>
+                            <li>حالة الطلب (مسودة، تدقيق، بانتظار لجنة، مقبول/مرفوض).</li>
+                            <li>توصية المدير المباشر والقرارات الرقمية المتعاقبة.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Partners (Expanded) -->
+    <section id="integrations" class="partners">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <h2 class="section-title">التكامل الفني (System Integration)</h2>
+                <p class="section-desc">لضمان دقة البيانات، يتكامل النظام مع الجهات التالية:</p>
+            </div>
+            <div class="partners-marquee">
+                <div class="marquee-content">
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/1.jpg" alt="نظام موارد" class="integration-img"> نظام موارد (Maward)</div>
+                        <p class="partner-desc">لسحب بيانات الموظف الأساسية وتحديث حالته الوظيفية تلقائياً.</p>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/2.png" alt="الهيئة السعودية للتخصصات الصحية" class="integration-img"> الهيئة السعودية للتخصصات الصحية</div>
+                        <p class="partner-desc">للتحقق من الاعتراف بالبرامج التدريبية والتصنيف المهني.</p>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/3.png" alt="نظام سفير" class="integration-img"> نظام سفير (Safeer)</div>
+                        <p class="partner-desc">للمبتعثين خارجياً لمتابعة الحالة الدراسية والتقارير الأكاديمية.</p>
+                    </div>
+                     <!-- Duplicated for scrolling -->
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/1.jpg" alt="نظام موارد" class="integration-img"> نظام موارد (Maward)</div>
+                        <p class="partner-desc">لسحب بيانات الموظف وتحديث الحالة.</p>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/2.png" alt="الهيئة السعودية للتخصصات الصحية" class="integration-img"> الهيئة السعودية للتخصصات</div>
+                        <p class="partner-desc">للتحقق من برامج التدريب والتصنيف.</p>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><img src="assets/images/3.png" alt="نظام سفير" class="integration-img"> نظام سفير (Safeer)</div>
+                        <p class="partner-desc">متابعة المبتعث الخارجي أكاديمياً.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Roles & Permissions -->
+    <section id="roles" class="section-padding bg-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مصفوفة الأدوار والصلاحيات</h2>
+                <p class="section-desc">حجر الأساس لضمان أمن المعلومات وحوكمة الإجراءات</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3 class="role-title">1. موظف إدارة الايفاد والابتعاث</h3>
+                    <p class="role-desc">التقديم، المتابعة، والتحديث الأكاديمي.</p>
+                    <ul class="role-duties">
+                        <li>إنشاء طلب جديد ورفع المسوغات.</li>
+                        <li>مطابقة شروط اللوائح والتخصصات.</li>
+                        <li>تجهيز الملف للتدقيق ولجنة الابتعاث.</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                    <h3 class="role-title">2. المدير المباشر</h3>
+                    <p class="role-desc">المراجعة الفنية والتوصية.</p>
+                    <ul class="role-duties">
+                        <li>الاطلاع على تفاصيل الطلب.</li>
+                        <li>اعتماد/رفض بناءً على احتياج القسم.</li>
+                        <li>إرفاق تقييم الأداء.</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <h3 class="role-title">3. مدقق الموارد البشرية</h3>
+                    <p class="role-desc">تدقيق المستندات والاعتماد.</p>
+                    <ul class="role-duties">
+                        <li>التأكد من بيانات الموفد/المبتعث.</li>
+                        <li>اعتماد البيانات وتحويلها لإدارة الابتعاث.</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3 class="role-title">4. لجنة الإيفاد والابتعاث</h3>
+                    <p class="role-desc">التصويت والاعتماد الجماعي.</p>
+                    <ul class="role-duties">
+                        <li>التصويت الرقمي (موافق/غير موافق).</li>
+                        <li>إضافة الملاحظات والمرئيات للجامعة/التخصص.</li>
+                        <li>إصدار وتوقيع محضر اللجنة إلكترونياً.</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3 class="role-title">5. مدير النظام</h3>
+                    <p class="role-desc">إدارة النظام والاعتماد النهائي.</p>
+                    <ul class="role-duties">
+                        <li>إصدار القرار الرسمي بعد الصلاحية.</li>
+                        <li>إدارة الميزانية والمستخدمين.</li>
+                        <li>تحديث شروط التقديم والتخصصات.</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                    <h3 class="role-title">6. المراجع المالي</h3>
+                    <p class="role-desc">الرقابة المالية والاعتماد.</p>
+                    <ul class="role-duties">
+                        <li>مراجعة مستحقات المبتعث (رواتب/بدلات).</li>
+                        <li>استرداد الرسوم إن وجد.</li>
+                        <li>اعتماد توفر البند المالي قبل الموافقة.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics & KPIs from PDF -->
+    <section id="analytics" class="analytics section-padding text-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-white" style="color:white;">أدوات التحليل السريعة (KPIs)</h2>
+                <p class="section-desc" style="color:var(--primary-blue-light);">لوحات تحكم لحظية ورسوم بيانية لخطة الاحتياج</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                    <div class="stat-label">المبتعثين حالياً</div>
+                    <div class="stat-desc">يعرض عدد الموظفين المتواجدين فعلياً في مقاعد الدراسة والمستمرين ببرامجهم.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                    <div class="stat-label">ميزانية الابتعاث</div>
+                    <div class="stat-desc">يوضح النسبة المستهلكة من الميزانية السنوية المخصصة مقارنة بالاحتياج الفعلي.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                    <div class="stat-label">طلبات بانتظار الإجراء</div>
+                    <div class="stat-desc">يبرز عدد الطلبات المعلقة التي تحتاج موافقة عاجلة من الإدارة لضمان سرعة الإنجاز.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="stat-label">المتوقع تخرجهم</div>
+                    <div class="stat-desc">يتنبأ بالخريجين المقترحين خلال الـ 6 أشهر القادمة للتخطيط لسد العجز.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expected Outputs -->
+    <section id="outputs" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المخرجات المتوقعة</h2>
+                <p class="section-desc">يُعد المخرج المتوقع من مقترح منصة رقمية لإدارة الإيفاد والابتعاث نظاماً متكاملاً يهدف إلى أتمتة دورة حياة الابتعاث بالكامل، بدءاً من تخطيط الاحتياجات السنوية وصولاً إلى متابعة الخريجين بعد انتهاء رحلة الموفد أو المبتعث.</p>
+            </div>
+            
+            <div class="grid-2">
+                <div class="output-card">
+                    <div class="output-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3 class="output-title">مخرجات إجرائية وتشغيلية</h3>
+                    <div class="output-desc">
+                        <ul class="custom-list">
+                            <li><strong>أتمتة كاملة للعمليات:</strong> تحويل كافة الإجراءات الورقية (تقديم الطلبات، الترشيح، صدور القرارات) إلى مسارات عمل رقمية ذكية.</li>
+                            <li><strong>قاعدة بيانات موحدة:</strong> بناء سجل رقمي شامل للموفدين والمبتعثين يتضمن الوثائق، التخصصات، والمؤهلات المحققة.</li>
+                            <li><strong>نظام متابعة ذكي:</strong> لوحات تحكم لتنبيه الإدارة ومراقبة الحالة في الوقت الفعلي باستمرار.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="output-card">
+                    <div class="output-icon"><i class="fa-solid fa-chess-knight"></i></div>
+                    <h3 class="output-title">مخرجات استراتيجية وتخطيطية</h3>
+                    <div class="output-desc">
+                        <ul class="custom-list">
+                            <li><strong>تخطيط مبني على البيانات:</strong> إعداد الخطة السنوية للإيفاد والابتعاث بناءً على دراسة الاحتياج الفعلي وفجوات المهارات.</li>
+                            <li><strong>تقارير تحليلية وإحصائية:</strong> إصدار تقارير دورية حول نسب الإنجاز، الميزانيات المصروفة، ومدى مواءمة المبتعثين مع الأهداف الاستراتيجية.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="output-card">
+                    <div class="output-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+                    <h3 class="output-title">تحسين تجربة المستفيد</h3>
+                    <div class="output-desc">
+                        <ul class="custom-list">
+                            <li><strong>سرعة وشفافية الإجراءات:</strong> تقليص الوقت المستغرق في معالجة الطلبات وزيادة الشفافية في عملية الاختيار والمفاضلة.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="output-card">
+                    <div class="output-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3 class="output-title">مخرجات التكامل التقني</h3>
+                    <div class="output-desc">
+                        <ul class="custom-list">
+                            <li><strong>التكامل مع موارد:</strong> لضمان تحديث بيانات الموظفين الوظيفية والمالية تلقائياً.</li>
+                            <li><strong>هيئة التخصصات الصحية:</strong> للتحقق من الاعتراف بالبرامج التدريبية والتصنيف المهني المعتمد.</li>
+                            <li><strong>نظام سفير:</strong> لمتابعة المبتعث خارجياً والتأكد من الحالة الدراسية والاعتمادات الأكاديمية.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top flex-between align-center">
+                <div class="footer-logo">
+                    <img src="assets/images/وردة-التميز.png" alt="شعار تجمع جدة الصحي الثاني" class="brand-logo-footer">
+                    <span>الإدارة التنفيذية للموارد البشرية</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#">الدعم الفني</a>
+                    <a href="#">الأسئلة الشائعة</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 تجمع جدة الصحي الثاني - حقوق الملكية محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <div class="fab-logo-container" title="مساعد التميز">
+            <svg class="progress-ring" width="60" height="60">
+                <circle class="progress-ring-circle" stroke="#00a8ff" stroke-width="3" fill="transparent" r="28" cx="30" cy="30"/>
+            </svg>
+            <div class="fab-logo">
+                <img src="assets/images/وردة-التميز.png" alt="شعار التميز" />
+            </div>
+        </div>
+        <button id="scrollToTopBtn" class="scroll-top-btn" title="العودة للأعلى">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- Interactive Script -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
